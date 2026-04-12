@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cabañas El Capitan | Descanso en la Naturaleza</title>
+    <meta name="description" content="Cabañas El Capitan ofrece una experiencia de descanso en la naturaleza con alojamiento acogedor, servicios esenciales y espacios pensados para escapadas en pareja, familia o amigos.">
+    <link rel="stylesheet" href="styles/index.css">
+    <script src="javascript/menu.js"></script>
+    <script src="javascript/index.js"></script>
+</head>
+<body>
+
+<!--  encabezado -->
+<header>
+    <div>
+        <a class="brand" href="index.html">
+            <img src="img/logo/logo_1.webp" width="48" height="48" alt="Logo Cabañas El Capitan">
+            <span>
+                <strong>Cabañas El Capitan</strong>
+                <small>Descanso, paisaje y experiencias a medida</small>
+            </span>
+        </a>
+        <div class="header-social">
+            <a href="https://www.facebook.com/profile.php?id=61557780654785" target="_blank">Facebook</a>
+            <a href="https://www.tiktok.com/@karol.guzmn11" target="_blank">TikTok</a>
+            <a href="https://wa.me/50432849397?text=Hola%20necesito%20informacion%20sobre%20las%20caba%C3%B1as" target="_blank">WhatsApp</a>
+        </div>
+        <div class="hamburguer-buttons" id="menu-toggle">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <nav class="hidden" id="site-nav">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="galeria.html">Galería</a></li>
+            <li><a href="ubicacion.html">Ubicación</a></li>
+            <li><a href="opiniones.html">Opiniones</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="normas.html">Normas</a></li>
+            <li><a href="quienes-somos.html">Quiénes Somos</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+    <!--  hero y carrusel -->
+    <section id="inicio">
+        <div class="carousel" id="carruselPrincipal">
+            <div class="track">
+
+                <!--  diapositiva 1 -->
+                <div class="slide">
+                    <div class="image">
+                        <picture>
+                            <source srcset="img/Area Social/area_social_5.jpg" media="(min-width:1024px)">
+                            <source srcset="img/Area Social/area_social_5.jpg" media="(min-width:720px)">
+                            <img src="img/Area Social/area_social_5.jpg" alt="Área social Cabañas El Capitan">
+                        </picture>
+                    </div>
+                    <div class="action">
+                        <p class="kicker">Escapadas naturales con comodidad real</p>
+                        <h1>Cabañas El Capitan</h1>
+                        <p>Un refugio rodeado de playas, creado para desconectar y disfrutar del descanso en medio de paisajes naturales y bellos atardeceres.</p>
+                        <div class="btn-group">
+                            <a class="btn btn-primary" href="#contacto">Consultar disponibilidad</a>
+                            <a class="btn btn-secondary" href="#cabanas">Ver cabañas</a>
+                        </div>
+                        <ul class="hero-stats">
+                            <li>
+                                <strong>7</strong>
+                                <span>Espacios disponibles</span>
+                            </li>
+                            <li>
+                                <strong>24/7</strong>
+                                <span>Atención al huésped</span>
+                            </li>
+                            <li>
+                                <strong>100%</strong>
+                                <span>Entorno natural</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!--  diapositiva 2 -->
+                <div class="slide">
+                    <div class="image">
+                        <picture>
+                            <source srcset="img/Cabaña Estribor/cabana_estribor_4.jpg" media="(min-width:1024px)">
+                            <source srcset="img/Cabaña Estribor/cabana_estribor_4.jpg" media="(min-width:720px)">
+                            <img src="img/Cabaña Estribor/cabana_estribor_4.jpg" alt="Cabaña Estribor">
+                        </picture>
+                    </div>
+                    <div class="action">
+                        <p class="kicker">Cabaña Estribor</p>
+                        <h2>Comodidad y naturaleza</h2>
+                        <p>Aire acondicionado, camas matrimoniales y TV con Disney+, Netflix y HBO para una estadía placentera.</p>
+                        <div class="btn-group">
+                            <a class="btn btn-primary" href="#cabanas">Ver cabañas</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--  diapositiva 3 -->
+                <div class="slide">
+                    <div class="image">
+                        <picture>
+                            <source srcset="img/Cabaña Timonel/cabana_timonel_3.jpg" media="(min-width:1024px)">
+                            <source srcset="img/Cabaña Timonel/cabana_timonel_3.jpg" media="(min-width:720px)">
+                            <img src="img/Cabaña Timonel/cabana_timonel_3.jpg" alt="Cabaña Timonel">
+                        </picture>
+                    </div>
+                    <div class="action">
+                        <p class="kicker">Explora la isla</p>
+                        <h2>Vista al Golfo de Fonseca</h2>
+                        <p>Senderos, playas y miradores con vistas espectaculares de Honduras, Nicaragua y El Salvador.</p>
+                        <div class="btn-group">
+                            <a class="btn btn-primary" href="#contacto">Reservar ahora</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--  diapositiva 4 -->
+                <div class="slide">
+                    <div class="image">
+                        <picture>
+                            <source srcset="img/Cabaña Catalejo/cabana_catalejo_1.jpg" media="(min-width:1024px)">
+                            <source srcset="img/Cabaña Catalejo/cabana_catalejo_1.jpg" media="(min-width:720px)">
+                            <img src="img/Cabaña Catalejo/cabana_catalejo_1.jpg" alt="Cabaña Catalejo">
+                        </picture>
+                    </div>
+                    <div class="action">
+                        <p class="kicker">Cabaña Catalejo</p>
+                        <h2>Descansa como mereces</h2>
+                        <p>Piscina, quiosco con hamacas y área de fogata ideales para compartir momentos inolvidables en familia.</p>
+                        <div class="btn-group">
+                            <a class="btn btn-primary" href="#cabanas">Ver cabañas</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!--  botones del carrusel generados por javascript -->
+        </div>
+    </section>
+
+    <!--  franja introductoria -->
+    <section class="intro-strip">
+        <div class="container">
+            <p>Cabañas El Capitan combina alojamiento acogedor, áreas exteriores y una experiencia pensada para quienes buscan desconectarse.</p>
+        </div>
+    </section>
+
+    <!--  cabañas -->
+    <section id="cabanas" class="section">
+        <div class="container">
+            <div class="section-heading">
+                <p class="kicker">Nuestras cabañas</p>
+                <h2>Visita y alójate en nuestras hermosas cabañas.</h2>
+                <p>Cada una de nuestras estancias está diseñada a detalle para garantizar su comodidad y ofrecer una experiencia única.</p>
+            </div>
+            <!--  tarjetas generadas por javascript -->
+            <div class="cabanas-grid" id="cabanas-grid"></div>
+        </div>
+    </section>
+
+    <!--  servicios -->
+    <section id="servicios" class="section section-dark">
+        <div class="container">
+            <div class="section-heading light">
+                <p class="kicker">Servicios y comodidades</p>
+                <h2>Nuestros servicios</h2>
+                <p>Nuestras instalaciones cuentan con todos los servicios necesarios para una estancia cómoda y agradable.</p>
+            </div>
+            <div class="services-grid">
+                <article class="service-card">
+                    <h3>Wi-Fi</h3>
+                    <p>Conexión a internet disponible en todas las cabañas durante tu estadía.</p>
+                </article>
+                <article class="service-card">
+                    <h3>Piscina</h3>
+                    <p>Disfruta de nuestra piscina en un entorno natural y rodeado de tranquilidad.</p>
+                </article>
+                <article class="service-card">
+                    <h3>Estacionamiento</h3>
+                    <p>Amplio estacionamiento seguro disponible para todos los huéspedes.</p>
+                </article>
+                <article class="service-card">
+                    <h3>Área de descanso</h3>
+                    <p>Quiosco con hamacas y espacios para relajarse al aire libre con vista al mar.</p>
+                </article>
+                <article class="service-card">
+                    <h3>Parrilla y fogata</h3>
+                    <p>Área de fogata y parrilla para compartir momentos inolvidables en familia.</p>
+                </article>
+                <article class="service-card">
+                    <h3>Actividades</h3>
+                    <p>Senderismo, playas, visitas a miradores y exploración de la isla del Tigre.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!--  acerca del lugar -->
+    <section class="section">
+        <div class="container story-layout">
+            <div class="story-copy">
+                <p class="kicker">Acerca del lugar</p>
+                <h2>Descubre la Magia del Golfo de Fonseca</h2>
+                <p>Nuestras cabañas cuentan con cómodas camas matrimoniales, aire acondicionado y entretenimiento completo con TV que incluye Disney+, Netflix y HBO para una estadía placentera.</p>
+                <p>Además, nuestros clientes pueden disfrutar de diversas amenidades como piscina, quiosco con hamacas y área de fogata, ideales para compartir momentos inolvidables en familia.</p>
+                <p>También podrán explorar las distintas playas que rodean la isla, realizar caminatas por senderos hacia la cima del Cerro El Tigre, donde disfrutarán de una vista espectacular del Golfo de Fonseca y de los tres países que lo conforman: Honduras, Nicaragua y El Salvador.</p>
+            </div>
+            <div class="story-panel">
+                <div class="story-note">
+                    <span>Ubicación</span>
+                    <strong>Amapala, Valle, Honduras. Isla del Tigre, Golfo de Fonseca.</strong>
+                </div>
+                <div class="story-note">
+                    <span>Capacidad</span>
+                    <strong>Entre 2 y 6 huéspedes según la unidad.</strong>
+                </div>
+                <div class="story-note">
+                    <span>Experiencia</span>
+                    <strong>Descanso, naturaleza y comodidad en un solo lugar.</strong>
+                </div>
+                <div class="story-note">
+                    <span>Espacios disponibles</span>
+                    <strong>7 cabañas y habitaciones para elegir.</strong>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--  ubicación -->
+    <section class="section section-muted">
+        <div class="container">
+            <div class="section-heading">
+                <p class="kicker">Ubicación</p>
+                <h2>¿Cómo llegar?</h2>
+            </div>
+            <div class="location-card">
+                <div class="location-info">
+                    <h3>Cabañas El Capitan</h3>
+                    <p><strong>Dirección:</strong> Aldea San Pablo, frente al mirador</p>
+                    <p><strong>Municipio:</strong> Amapala, Valle, Honduras</p>
+                    <p><strong>Referencia:</strong> Isla del Tigre, Golfo de Fonseca</p>
+                    <p><strong>Coordenadas:</strong> 13.289° N, 87.632° W</p>
+                    <a class="btn btn-primary" href="https://maps.google.com/?q=Cabañas+El+Capitan+Amapala+Honduras" target="_blank">Ver en Google Maps</a>
+                </div>
+                <div class="location-steps">
+                    <h3>Cómo llegar</h3>
+                    <ol>
+                        <li>Salir hacia <strong>San Lorenzo, Valle</strong></li>
+                        <li>Tomar la barca en el muelle de <strong>Coyolito</strong></li>
+                        <li>Llegar a la <strong>Isla del Tigre</strong></li>
+                        <li>Dirigirse a la <strong>Aldea San Pablo</strong>, frente al mirador</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--  reseñas -->
+    <section class="section">
+        <div class="container">
+            <div class="section-heading">
+                <p class="kicker">Opiniones</p>
+                <h2>Lo que dicen nuestros huéspedes</h2>
+            </div>
+            <div class="reviews-grid">
+                <blockquote class="review-card">
+                    <p>"Muy buena experiencia general y entorno agradable. Un lugar increíble para desconectarse. Volvería sin dudarlo."</p>
+                    <cite>Nombre Apellido | Huésped</cite>
+                </blockquote>
+                <blockquote class="review-card">
+                    <p>"Las vistas al golfo son espectaculares. La atención fue excelente y las instalaciones muy cómodas."</p>
+                    <cite>Nombre Apellido | Escapada en pareja</cite>
+                </blockquote>
+                <blockquote class="review-card">
+                    <p>"Un ambiente ideal para la familia. Los niños disfrutaron muchísimo de la piscina y los senderos. Totalmente recomendado."</p>
+                    <cite>Nombre Apellido | Viaje familiar</cite>
+                </blockquote>
+            </div>
+        </div>
+    </section>
+
+    <!--  contacto cta -->
+    <section id="contacto" class="section section-dark">
+        <div class="container contact-cta">
+            <div class="contact-cta-info">
+                <p class="kicker">Contacto y reservas</p>
+                <h2>¿Listo para reservar?</h2>
+                <p>Contáctanos directamente y te confirmamos disponibilidad. Estamos en Amapala, Isla del Tigre, Honduras.</p>
+                <ul class="contact-quick">
+                    <li><strong>Teléfono / WhatsApp:</strong> +504 3284-9397</li>
+                    <li><strong>Dirección:</strong> Aldea San Pablo, frente al mirador, Amapala</li>
+                    <li><strong>Atención:</strong> Lunes a Domingo, 7:00 AM – 9:00 PM</li>
+                </ul>
+            </div>
+            <div class="contact-cta-actions">
+                <a class="btn btn-sand" href="https://wa.me/50432849397?text=Hola%20necesito%20informacion%20sobre%20las%20caba%C3%B1as" target="_blank">Consultar por WhatsApp</a>
+                <a class="btn btn-outline" href="contacto.html">Ir al formulario de contacto</a>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-col"><strong>Cabañas El Capitan</strong><p>Un refugio natural en la Isla del Tigre, Golfo de Fonseca. Honduras.</p></div>
+            <div class="footer-col"><strong>Explorar</strong><ul><li><a href="index.html">Inicio</a></li><li><a href="servicios.html">Servicios</a></li><li><a href="galeria.html">Galería</a></li><li><a href="ubicacion.html">Ubicación</a></li><li><a href="blog.html">Blog</a></li></ul></div>
+            <div class="footer-col"><strong>Información</strong><ul><li><a href="opiniones.html">Opiniones</a></li><li><a href="contacto.html">Contáctenos</a></li><li><a href="faq.html">Preguntas Frecuentes</a></li><li><a href="normas.html">Normas del Hostal</a></li><li><a href="quienes-somos.html">Quiénes Somos</a></li></ul></div>
+            <div class="footer-col"><strong>Contacto</strong><address><p>Aldea San Pablo, frente al mirador</p><p>Amapala, Valle, Honduras</p><p>Tel: +504 3284-9397</p></address></div>
+        </div>
+        <div class="footer-bottom"><p>&copy; 2025 Cabañas El Capitan. Todos los derechos reservados.</p></div>
+    </div>
+</footer>
+</body>
+</html>
+
+
+

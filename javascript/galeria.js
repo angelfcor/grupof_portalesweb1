@@ -70,7 +70,7 @@ function renderGaleria(categoriaFiltro) {
         img.alt = item.alt;
 
         const caption = document.createElement("FIGCAPTION");
-        caption.textContent = item.alt;
+        caption.textContent = item.alt.split(" - ")[0].trim();
 
         figura.appendChild(img);
         figura.appendChild(caption);

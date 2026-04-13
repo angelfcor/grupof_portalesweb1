@@ -690,15 +690,6 @@ footer {
     font-size: 0.95rem;
 }
 
-.location-card {
-    display: flex;
-    flex-wrap: wrap;
-    background-color: #fffaf4;
-    border-radius: 15px;
-    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
-    overflow: hidden;
-}
-
 .location-info {
     flex: 0 0 100%;
     padding: 2rem;
@@ -1232,40 +1223,6 @@ footer {
     margin-top: 2rem;
 }
 
-.btn {
-    padding: 0.7rem 1.35rem;
-    border-radius: 8px;
-    font-weight: 700;
-}
-
-.btn-primary {
-    background-color: #e7c89e;
-}
-
-.btn-secondary {
-    background-color: #362117;
-    color: #fff;
-}
-
-.kicker {
-    text-transform: uppercase;
-    font-size: 0.75rem;
-    font-weight: 800;
-}
-
-.story-copy {
-    flex: 1;
-}
-
-.story-panel {
-    flex: 1;
-}
-
-.story-note {
-    padding: 1rem;
-}
-
-/*NORMAS INTRO*/
 .normas-intro {
     background-color: #fffaf4;
     border-left: 4px solid #5b3a29;
@@ -1273,15 +1230,17 @@ footer {
     padding: 1.25rem 1.5rem;
     margin-bottom: 2.5rem;
 }
+
 .normas-intro p {
-    margin:0;
-    color:#33261f;
-    font-size:0.97rem;
-    line-height:1.65;
+    margin: 0;
+    color: #33261f;
+    font-size: 0.97rem;
+    line-height: 1.65;
 }
+
 .normas-intro a {
-    color:#5b3a29;
-    font-weight:700;
+    color: #5b3a29;
+    font-weight: 700;
 }
 
 /*NORMAS GRID*/
@@ -1291,64 +1250,73 @@ footer {
     gap: 1.5rem;
     margin-bottom: 3rem;
 }
+
 .norma-section {
     flex: 0 0 100%;
     background-color: #fffaf4;
     border-radius: 15px;
     padding: 1.75rem 1.5rem;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
 }
+
 @media (min-width:600px) {
     .norma-section {
-        flex:0 0 calc(50% - 0.75rem);
+        flex: 0 0 calc(50% - 0.75rem);
     }
 }
+
 @media (min-width:1000px) {
     .norma-section {
-        flex:0 0 calc(33.333% - 1rem);
+        flex: 0 0 calc(33.333% - 1rem);
     }
 }
+
 .norma-icon {
-    font-size:2rem;
-    margin-bottom:0.75rem;
-    line-height:1;
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+    line-height: 1;
 }
+
 .norma-section h2 {
-    font-size:1.2rem;
-    color:#362117;
-    margin:0 0 1rem;
-    padding-bottom:0.5rem;
-    border-bottom:2px solid #e7c89e;
+    font-size: 1.2rem;
+    color: #362117;
+    margin: 0 0 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #e7c89e;
 }
+
 .norma-section ul {
-    list-style:none;
-    padding:0;
-    margin:0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
+
 .norma-section ul li {
-    padding:0.4rem 0 0.4rem 1.4rem;
-    position:relative;
-    color:#33261f;
-    font-size:0.92rem;
-    border-bottom:1px solid #f5e8d8;
-    line-height:1.55;
+    padding: 0.4rem 0 0.4rem 1.4rem;
+    position: relative;
+    color: #33261f;
+    font-size: 0.92rem;
+    border-bottom: 1px solid #f5e8d8;
+    line-height: 1.55;
 }
+
 .norma-section ul li:last-child {
-    border-bottom:none;
+    border-bottom: none;
 }
+
 .norma-section ul li::before {
-    content:"✔";
-    color:#2f5b47;
-    font-size:0.75rem;
-    position:absolute;
-    left:0;
-    top:0.55rem;
+    content: "✔";
+    color: #2f5b47;
+    font-size: 0.75rem;
+    position: absolute;
+    left: 0;
+    top: 0.55rem;
 }
 
 /*FOOTER NOTE*/
 .normas-footer-note {
     background-color: #362117;
-    color: rgba(255,255,255,0.85);
+    color: rgba(255, 255, 255, 0.85);
     border-radius: 15px;
     padding: 2rem 2.25rem;
     display: flex;
@@ -1357,11 +1325,12 @@ footer {
     align-items: center;
     justify-content: space-between;
 }
+
 .normas-footer-note p {
-    margin:0;
-    flex:1 1 300px;
-    font-size:0.93rem;
-    line-height:1.6;
+    margin: 0;
+    flex: 1 1 300px;
+    font-size: 0.93rem;
+    line-height: 1.6;
 }
 
 /*FILTROS*/
@@ -1371,6 +1340,7 @@ footer {
     gap: 0.75rem;
     margin-bottom: 2rem;
 }
+
 .filtro-btn {
     padding: 0.55rem 1.2rem;
     background-color: #fffaf4;
@@ -1382,10 +1352,12 @@ footer {
     color: #362117;
     cursor: pointer;
 }
+
 .filtro-btn:hover {
     border-color: #5b3a29;
     background-color: #f0dfc7;
 }
+
 .filtro-btn.activo {
     background-color: #5b3a29;
     border-color: #5b3a29;
@@ -1398,27 +1370,31 @@ footer {
     flex-wrap: wrap;
     gap: 1rem;
 }
+
 .galeria-item {
     flex: 0 0 100%;
     margin: 0;
     overflow: hidden;
     border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
     background-color: #fffaf4;
 }
+
 @media (min-width:560px) {
     .galeria-item {
-        flex:0 0 calc(50% - 0.5rem);
+        flex: 0 0 calc(50% - 0.5rem);
     }
 }
+
 @media (min-width:900px) {
     .galeria-item {
-        flex:0 0 calc(33.333% - 0.67rem);
+        flex: 0 0 calc(33.333% - 0.67rem);
     }
 }
+
 @media (min-width:1100px) {
     .galeria-item {
-        flex:0 0 calc(25% - 0.75rem);
+        flex: 0 0 calc(25% - 0.75rem);
     }
 }
 
@@ -1428,6 +1404,7 @@ footer {
     object-fit: cover;
     object-position: center;
 }
+
 .galeria-item figcaption {
     padding: 0.5rem 0.75rem;
     font-size: 0.8rem;
@@ -1446,6 +1423,7 @@ footer {
     font-weight: 700;
     font-size: 0.88rem;
 }
+
 .btn-whatsapp:hover {
     background-color: #1fba59;
 }

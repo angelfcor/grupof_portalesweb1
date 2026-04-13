@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contáctenos | Cabañas El Capitan</title>
+    <meta name="description"
+        content="Comunícate con Cabañas El Capitan para reservas, consultas o información. Estamos en Amapala, Isla del Tigre, Honduras.">
+    <link rel="stylesheet" href="styles/contacto.css">
+    <script src="javascript/menu.js"></script>
+    <script src="javascript/contacto.js"></script>
+</head>
+
+<body>
+    <header>
+        <div>
+            <a class="brand" href="index.html">
+                <img src="img/logo/logo_1.webp" width="48" height="48" alt="Logo Cabañas El Capitan">
+                <span><strong>Cabañas El Capitan</strong><small>Descanso, paisaje y experiencias a medida</small></span>
+            </a>
+            <div class="header-social">
+                <a href="https://www.facebook.com/profile.php?id=61557780654785" target="_blank">Facebook</a>
+                <a href="https://www.tiktok.com/@karol.guzmn11" target="_blank">TikTok</a>
+                <a href="https://wa.me/50432849397?text=Hola%20quiero%20mas%20informacion" target="_blank">WhatsApp</a>
+            </div>
+            <div class="hamburguer-buttons" id="menu-toggle">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+        <nav class="hidden" id="site-nav">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="ubicacion.html">Ubicación</a></li>
+                <li><a href="opiniones.html">Opiniones</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="normas.html">Normas</a></li>
+                <li><a href="quienes-somos.html">Quiénes Somos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="page-banner">
+            <div class="container">
+                <nav class="breadcrumb" aria-label="Ruta de navegación">
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li>Contacto</li>
+                    </ul>
+                </nav>
+                <p class="kicker">Estamos para ayudarte</p>
+                <h1>Contáctenos</h1>
+                <p>Resolvemos tus dudas, gestionamos tu reserva y coordinamos tu visita a la Isla del Tigre.</p>
+            </div>
+        </section>
+        <section class="section">
+            <div class="container">
+                <div class="contact-layout">
+                    <aside class="contact-info">
+                        <h2>Información de contacto</h2>
+                        <div class="info-item">
+                            <strong>Dirección</strong>
+                            <p>Aldea San Pablo, frente al mirador<br>Amapala, Valle, Honduras</p>
+                        </div>
+                        <div class="info-item">
+                            <strong>Teléfono / WhatsApp</strong>
+                            <p><a href="tel:+50432849397">+504 3284-9397</a></p>
+                        </div>
+                        <div class="info-item">
+                            <strong>Redes sociales</strong>
+                            <p>
+                                <a href="https://www.facebook.com/profile.php?id=61557780654785"
+                                    target="_blank">Facebook</a><br>
+                                <a href="https://www.tiktok.com/@karol.guzmn11" target="_blank">TikTok</a>
+                            </p>
+                        </div>
+                        <div class="info-item">
+                            <strong>Horario de atención</strong>
+                            <p>Lunes a Domingo<br>7:00 AM – 9:00 PM</p>
+                        </div>
+                        <div class="info-item">
+                            <strong>WhatsApp directo</strong>
+                            <a class="btn btn-whatsapp"
+                                href="https://wa.me/50432849397?text=Hola%20quiero%20hacer%20una%20consulta"
+                                target="_blank">Escribir por WhatsApp</a>
+                        </div>
+                    </aside>
+                    <div class="contact-form-wrap">
+                        <h2>Envíanos un mensaje</h2>
+                        <form id="contactForm" novalidate>
+                            <fieldset>
+                                <legend>Datos de contacto</legend>
+                                <div class="form-group" id="txtNombreDiv">
+                                    <label for="txtNombre">Nombre completo <span class="required">*</span></label>
+                                    <input type="text" id="txtNombre" name="nombre" placeholder="Tu nombre completo">
+                                </div>
+                                <div class="form-group" id="txtCorreoDiv">
+                                    <label for="txtCorreo">Correo electrónico <span class="required">*</span></label>
+                                    <input type="email" id="txtCorreo" name="correo" placeholder="tucorreo@ejemplo.com">
+                                </div>
+                                <div class="form-group" id="txtTelefonoDiv">
+                                    <label for="txtTelefono">Teléfono <span class="optional">(opcional)</span></label>
+                                    <input type="tel" id="txtTelefono" name="telefono" placeholder="+504 XXXX-XXXX">
+                                </div>
+                                <div class="form-group" id="txtAsuntoDiv">
+                                    <label for="txtAsunto">Asunto <span class="required">*</span></label>
+                                    <input type="text" id="txtAsunto" name="asunto"
+                                        placeholder="¿En qué te podemos ayudar?">
+                                </div>
+                                <div class="form-group" id="txtMensajeDiv">
+                                    <label for="txtMensaje">Mensaje <span class="required">*</span></label>
+                                    <textarea id="txtMensaje" name="mensaje" rows="5"
+                                        placeholder="Escribe tu mensaje aquí..."></textarea>
+                                </div>
+                                <div id="formExito" class="form-exito" style="display:none;">
+                                    Tu mensaje ha sido enviado. Nos comunicaremos contigo pronto.
+                                </div>
+                                <button type="button" id="btnEnviar" class="btn btn-primary">Enviar mensaje</button>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col"><strong>Cabañas El Capitan</strong>
+                    <p>Un refugio natural en la Isla del Tigre, Golfo de Fonseca. Honduras.</p>
+                </div>
+                <div class="footer-col"><strong>Explorar</strong>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="servicios.html">Servicios</a></li>
+                        <li><a href="galeria.html">Galería</a></li>
+                        <li><a href="ubicacion.html">Ubicación</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col"><strong>Información</strong>
+                    <ul>
+                        <li><a href="opiniones.html">Opiniones</a></li>
+                        <li><a href="contacto.html">Contáctenos</a></li>
+                        <li><a href="faq.html">Preguntas Frecuentes</a></li>
+                        <li><a href="normas.html">Normas del Hostal</a></li>
+                        <li><a href="quienes-somos.html">Quiénes Somos</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col"><strong>Contacto</strong>
+                    <address>
+                        <p>Aldea San Pablo, frente al mirador</p>
+                        <p>Amapala, Valle, Honduras</p>
+                        <p>Tel: +504 3284-9397</p>
+                    </address>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Cabañas El Capitan. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

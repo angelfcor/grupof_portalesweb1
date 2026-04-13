@@ -1,18 +1,11 @@
-﻿// galería de fotos con filtro por categoría
-document.addEventListener("DOMContentLoaded", () => {
-
+﻿document.addEventListener("DOMContentLoaded", () => {
     renderGaleria("todas");
-
-    // botones de filtro
     const botones = document.querySelectorAll(".filtro-btn");
     botones.forEach(btn => {
         btn.addEventListener("click", (e) => {
             e.preventDefault();
-
-            // marcar activo
             botones.forEach(b => b.classList.remove("activo"));
             btn.classList.add("activo");
-
             const categoria = btn.getAttribute("data-filtro");
             renderGaleria(categoria);
         });
@@ -20,7 +13,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 });
 
-// datos de la galería
 const galeriaData = [
     // área social
     { src: "img/Area Social/area_social_1.jpg", alt: "Área social - vista 1", categoria: "area-social" },
@@ -48,15 +40,12 @@ const galeriaData = [
     { src: "img/Habitación Almeja/habitacion_almeja_5.jpg", alt: "Habitación Almeja - detalle", categoria: "habitaciones" }
 ];
 
-// renderizar galería
 function renderGaleria(categoriaFiltro) {
     const grid = document.getElementById("galeria-grid");
     if (!grid) return;
 
-    // limpiar rejilla
     grid.innerHTML = "";
 
-    // filtrar imágenes
     const imagenesFiltradas = categoriaFiltro === "todas"
         ? galeriaData
         : galeriaData.filter(img => img.categoria === categoriaFiltro);

@@ -1,16 +1,9 @@
-// inicio: carrusel y tarjetas de cabañas
 document.addEventListener("DOMContentLoaded", () => {
-
-    // carrusel principal
     const carrusel = new Carousel("carruselPrincipal", 4);
     carrusel.init();
-
-    // tarjetas de cabañas
     renderCabinas();
-
 });
 
-// clase carrusel
 class Carousel {
     constructor(carouselId, tickTimeInSeconds = 4) {
         this.carouselHolder = document.getElementById(carouselId);
@@ -23,19 +16,16 @@ class Carousel {
         this.tickerId = null;
         this.direction = 1;
     }
-
     init() {
         this.generateNavigationUI();
         this.tick();
     }
-
     tick() {
         this.tickerId = setTimeout(() => {
             this.moveNext();
             this.tick();
         }, this.tickTime);
     }
-
     moveNext() {
         let tmpNewIndex = this.currentIndex + this.direction;
 
@@ -47,15 +37,12 @@ class Carousel {
             tmpNewIndex = this.minLimit + 1;
             this.direction = 1;
         }
-
         this.moveTo(tmpNewIndex);
     }
-
     moveTo(newIndex) {
         this.currentIndex = newIndex;
         this.track.style.left = `${-100 * this.currentIndex}vw`;
     }
-
     generateNavigationUI() {
         const btnLeft  = document.createElement("BUTTON");
         const btnRight = document.createElement("BUTTON");
@@ -76,7 +63,6 @@ class Carousel {
             }
             this.moveTo(newIndex);
         });
-
         btnRight.addEventListener("click", (e) => {
             e.preventDefault();
             e.stopPropagation();
@@ -87,13 +73,10 @@ class Carousel {
             }
             this.moveTo(newIndex);
         });
-
         this.carouselHolder.appendChild(btnLeft);
         this.carouselHolder.appendChild(btnRight);
     }
 }
-
-// datos de cabañas
 const cabinasData = [
     {
         nombre: "Cabaña Catalejo",
@@ -152,8 +135,6 @@ const cabinasData = [
         enlace: "https://wa.me/50432849397?text=Hola%20necesito%20informacion%20sobre%20la%20caba%C3%B1a%20nav%C3%ADo"
     }
 ];
-
-// renderizar tarjetas de cabañas
 function renderCabinas() {
     const grid = document.getElementById("cabanas-grid");
     if (!grid) return;
@@ -163,7 +144,6 @@ function renderCabinas() {
         const card = document.createElement("ARTICLE");
         card.classList.add("cabin-card");
 
-        // imagen o marcador
         if (cabina.folder && cabina.portada) {
             const img = document.createElement("IMG");
             img.src = buildImagePath(cabina.folder, cabina.portada);
@@ -175,21 +155,15 @@ function renderCabinas() {
             placeholder.textContent = "Imagen disponible próximamente";
             card.appendChild(placeholder);
         }
-
-        // cuerpo
         const body = document.createElement("DIV");
         body.classList.add("card-body");
-
         const tag = document.createElement("P");
         tag.classList.add("card-tag");
         tag.textContent = cabina.tipo;
-
         const titulo = document.createElement("H3");
         titulo.textContent = cabina.nombre;
-
         const desc = document.createElement("P");
         desc.textContent = cabina.descripcion;
-
         const enlace = document.createElement("A");
         enlace.href = cabina.enlace;
         enlace.target = "_blank";
@@ -204,7 +178,6 @@ function renderCabinas() {
         grid.appendChild(card);
     });
 }
-
 function buildImagePath(carpeta, archivo) {
     return "img/" + carpeta + "/" + archivo;
 }

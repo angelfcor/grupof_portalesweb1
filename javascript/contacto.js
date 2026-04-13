@@ -13,10 +13,10 @@ document.addEventListener("DOMContentLoaded", () => {
         e.stopPropagation();
         limpiarErrores(formulario);
 
-        const nombreInput  = document.getElementById("txtNombre");
-        const correoInput  = document.getElementById("txtCorreo");
+        const nombreInput = document.getElementById("txtNombre");
+        const correoInput = document.getElementById("txtCorreo");
         const telefonoInput = document.getElementById("txtTelefono");
-        const asuntoInput  = document.getElementById("txtAsunto");
+        const asuntoInput = document.getElementById("txtAsunto");
         const mensajeInput = document.getElementById("txtMensaje");
 
         const errores = {};

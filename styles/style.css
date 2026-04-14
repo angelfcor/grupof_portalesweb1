@@ -1095,7 +1095,6 @@ footer {
     font-size: 0.92rem;
 }
 
-/*ATRACTIVOS*/
 .attractions-grid {
     display: flex;
     flex-wrap: wrap;
@@ -1156,7 +1155,6 @@ footer {
     color: #5b3a29;
 }
 
-/*TRANSPORT NOTE*/
 .transport-note {
     display: flex;
     flex-wrap: wrap;
@@ -1243,7 +1241,6 @@ footer {
     font-weight: 700;
 }
 
-/*NORMAS GRID*/
 .normas-grid {
     display: flex;
     flex-wrap: wrap;
@@ -1313,7 +1310,6 @@ footer {
     top: 0.55rem;
 }
 
-/*FOOTER NOTE*/
 .normas-footer-note {
     background-color: #362117;
     color: rgba(255, 255, 255, 0.85);
@@ -1333,7 +1329,6 @@ footer {
     line-height: 1.6;
 }
 
-/*FILTROS*/
 .filter-bar {
     display: flex;
     flex-wrap: wrap;
@@ -1364,7 +1359,6 @@ footer {
     color: #ffffff;
 }
 
-/*GALERÍA GRID*/
 .galeria-grid {
     display: flex;
     flex-wrap: wrap;
@@ -1412,7 +1406,6 @@ footer {
     text-align: center;
 }
 
-/*BOTÓN WHATSAPP*/
 .btn-whatsapp {
     display: inline-block;
     padding: 0.65rem 1.1rem;
@@ -1428,7 +1421,6 @@ footer {
     background-color: #1fba59;
 }
 
-/*CONTACTO LAYOUT*/
 .contact-layout {
     display: flex;
     flex-wrap: wrap;
@@ -1461,7 +1453,6 @@ footer {
     }
 }
 
-/*INFO CONTACTO*/
 .contact-info h2 {
     font-size: 1.4rem;
     color: #e7c89e;
@@ -1500,7 +1491,6 @@ footer {
     text-decoration: underline;
 }
 
-/*FORMULARIO*/
 .contact-form-wrap h2 {
     font-size: 1.5rem;
     color: #362117;
@@ -1567,7 +1557,6 @@ legend {
     font-size: 0.92rem;
 }
 
-/*FAQ*/
 .faq-container {
     max-width: 800px;
 }
@@ -1658,7 +1647,6 @@ legend {
     text-decoration: underline;
 }
 
-/*CTA FAQ*/
 .faq-cta {
     margin-top: 2rem;
     padding: 2rem;
@@ -1678,7 +1666,6 @@ legend {
     font-weight: 600;
 }
 
-/*BOTONES NUEVOS*/
 .btn-tiktok {
     background-color: #2f241d;
     color: #fff;
@@ -1706,12 +1693,10 @@ legend {
     color: #fff;
 }
 
-/*GRUPOS*/
 .center-group {
     justify-content: center;
 }
 
-/*CTA BLOCK (solo lo extra)*/
 .cta-block h2 {
     font-size: 2rem;
     margin: 0.2rem 0 0.75rem;
@@ -1724,7 +1709,6 @@ legend {
     max-width: 44rem;
 }
 
-/*BLOG*/
 .blog-grid {
     display: flex;
     flex-wrap: wrap;

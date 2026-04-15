@@ -1,3 +1,8 @@
+//Enlace a pagina de GithubPages
 https://angelfcor.github.io/grupof_portalesweb1/
 
+//Enlace al video
 https://youtu.be/pGgglLvJkCM
+
+//Enlace al repositorio
+https://github.com/angelfcor/grupof_portalesweb1.git
